@@ -1,0 +1,73 @@
+.landing {
+  background: $black;
+  background: linear-gradient(-155deg,$black,$tundora);
+  background-attachment: fixed;
+  min-height: 100%;
+  padding:25px;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  @media all and (min-width:768px) {
+    padding:0;
+  }
+}
+
+.landing__content {
+  text-align: center;
+}
+
+.landing__title {
+  color: $white;
+  font-size: $txt-l;
+  font-family: $sans;
+  font-weight: 400;
+  margin-top: $margin-xs;
+  margin-bottom: $margin-xs;
+  padding-left: .75em;
+  padding-right: .75em;
+  @media all and (min-width: 480px) {
+    font-size: $txt-xl;
+  }
+  @media all and (min-width: 768px) {
+    font-size: $txt-xxxl;
+  }
+}
+
+.landing__subtitle {
+  color:$dusty-gray;
+  font-size: $txt-l;
+  font-family: $sans;
+  font-weight: 400;
+  margin-top: $margin-xs;
+  margin-bottom: $margin-xs;
+  padding-left: .75em;
+  padding-right: .75em;
+  @media all and (min-width: 480px) {
+    font-size: $txt-xl;
+  }
+  @media all and (min-width: 768px) {
+    font-size: $txt-xxxl;
+  }
+}
+
+.landing__image {
+  background:transparent url('../img/marco-dejong.jpg');
+  background-size: cover;
+  border: 10px solid $blue-chill;
+  border-radius: 50%;
+  height: 200px;
+  margin: 0 auto;
+  width: 200px;
+  @media all and (min-width:768px) {
+    height: 280px;
+    width: 280px;
+  }
+}

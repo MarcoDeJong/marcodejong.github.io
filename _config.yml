@@ -1,5 +1,10 @@
-theme: jekyll-theme-cayman
-title: Marco de Jong
-description: Freelance Webdeveloper
-show_downloads: false
-google_analytics: UA-24526135-1
+# Site settings
+title: Marco de Jong - Freelance developer
+email: info@marco-dejong.nl
+description: Marco de Jong - Freelance fullstack developer. I'm always available for freelance work.
+url: "https://www.marco-dejong.nl"
+twitter_username: marcodejong
+
+# Build settings
+markdown: kramdown
+permalink: pretty

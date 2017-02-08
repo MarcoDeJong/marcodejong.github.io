@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: landing
 ---
-
-While working on exiting projects for my lovely clients, my personal website is lacking a bit of care.
-
-Please check my [LinkedIn](http://nl.linkedin.com/in/marcojohndejong) for my CV or enjoy my current [Tweets](http://twitter.com/marcodejong/).
+<h1 class="landing__title">Marco de Jong</h1>
+<h2 class="landing__subtitle">Fullstack <span class="ui__emphasize">Developer</span></h2>
+<div class="landing__image"></div>
