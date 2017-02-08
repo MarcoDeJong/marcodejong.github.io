@@ -1,6 +1,6 @@
 .landing {
   background: $black;
-  background: linear-gradient(-155deg,$black,$tundora);
+  background: linear-gradient(45deg,$black,$tundora);
   background-attachment: fixed;
   height: 100%;
   padding:25px;
@@ -24,14 +24,12 @@
   text-align: center;
 }
 
-.landing__title {
-  color: $white;
+.landing__title,
+.landing__subtitle {
   font-size: $txt-l;
   font-family: $sans;
   font-weight: 400;
-  line-height:1.1em;
-  padding-left: .75em;
-  padding-right: .75em;
+  line-height:0.7em;
   @media all and (min-width: 480px) {
     font-size: $txt-xl;
   }
@@ -39,22 +37,12 @@
     font-size: $txt-xxxl;
   }
 }
-
+.landing__title {
+  color: $white;
+}
 .landing__subtitle {
   color:$dusty-gray;
-  font-size: $txt-l;
-  font-family: $sans;
-  font-weight: 400;
-  line-height:1.1em;
   margin-bottom:$margin-l;
-  padding-left: .75em;
-  padding-right: .75em;
-  @media all and (min-width: 480px) {
-    font-size: $txt-xl;
-  }
-  @media all and (min-width: 768px) {
-    font-size: $txt-xxxl;
-  }
 }
 
 .landing__image {
