@@ -29,8 +29,6 @@
   font-size: $txt-l;
   font-family: $sans;
   font-weight: 400;
-  margin-top: $margin-xs;
-  margin-bottom: $margin-xs;
   padding-left: .75em;
   padding-right: .75em;
   @media all and (min-width: 480px) {
@@ -46,8 +44,7 @@
   font-size: $txt-l;
   font-family: $sans;
   font-weight: 400;
-  margin-top: $margin-xs;
-  margin-bottom: $margin-xs;
+  margin-bottom:$margin-l;
   padding-left: .75em;
   padding-right: .75em;
   @media all and (min-width: 480px) {
