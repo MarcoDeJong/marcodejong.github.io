@@ -14,7 +14,10 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   @media all and (min-width:768px) {
     padding:0;
   }
