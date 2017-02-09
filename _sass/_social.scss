@@ -5,6 +5,7 @@
   list-style: none;
   margin-bottom: $margin-s;
   margin-top: $margin-s/2;
+  padding:0;
 }
 
 .social-bar__listitem {
@@ -13,12 +14,13 @@
 
 .social-bar__link {
   color: #fff;
-  font-size: $txt-xxxl;
+  font-size: $txt-xxl;
   padding: 0 25px;
   transition: all .2s;
-  transform: rotate(-25deg);
 
   &:hover {
+    transform: rotate(-25deg);
+
     .social-bar__twitter {
       color: $twitter;
     }
