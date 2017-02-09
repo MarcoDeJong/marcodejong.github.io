@@ -2,9 +2,12 @@
 title: Marco de Jong - Freelance developer
 email: info@marco-dejong.nl
 description: Marco de Jong - Freelance fullstack developer. I'm always available for freelance work.
-url: "https://www.marco-dejong.nl"
+url: "https://marco-dejong.nl"
 twitter_username: marcodejong
 
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+gems:
+  - jekyll-sitemap
