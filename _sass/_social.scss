@@ -1,0 +1,34 @@
+.social-bar {}
+
+.social-bar__list {
+  font-size: $txt;
+  list-style: none;
+  margin-bottom: $margin-s;
+  margin-top: $margin-s/2;
+}
+
+.social-bar__listitem {
+  display: inline-block;
+}
+
+.social-bar__link {
+  color: #fff;
+  font-size: $textSize-xxxxxl;
+  padding: 0 25px;
+  transition: all .2s;
+  transform: rotate(-25deg);
+
+  &:hover {
+    .social-bar__twitter {
+      color: $twitter;
+    }
+    .social-bar__github {
+      color: $github;
+    }
+    .social-bar__linkedin {
+      color: $linkedin;
+    }
+  }
+}
+
+

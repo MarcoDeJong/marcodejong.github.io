@@ -42,7 +42,10 @@
 }
 .landing__subtitle {
   color:$dusty-gray;
-  margin-bottom:$margin-l;
+  margin-bottom:$margin-m;
+  @media all and (min-width: 768px) {
+    margin-bottom: $margin-l;
+  }
 }
 
 .landing__image {
