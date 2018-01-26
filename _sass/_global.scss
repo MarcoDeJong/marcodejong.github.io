@@ -57,6 +57,9 @@ body {
   -moz-font-feature-settings: "liga" on;
 }
 
+.ui__center {
+  text-align: center;
+}
 .ui__emphasize {
   color:$blue-chill;
   font-weight:bold;
