@@ -7,7 +7,7 @@ twitter_username: marcodejong
 
 # Build settings
 markdown: kramdown
-permalink: pretty
+permalink: none
 
 gems:
   - jekyll-sitemap
