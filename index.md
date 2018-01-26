@@ -1,4 +1,5 @@
 ---
+title: Full Stack Developer
 layout: landing
 ---
 <h1 class="landing__title">Marco <strong>de Jong</strong></h1>
