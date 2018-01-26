@@ -16,11 +16,8 @@
   color: #fff;
   font-size: $txt-xxl;
   padding: 0 25px;
-  transition: all .2s;
 
   &:hover {
-    transform: rotate(-25deg);
-
     .social-bar__twitter {
       color: $twitter;
     }

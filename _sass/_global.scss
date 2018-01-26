@@ -1,4 +1,4 @@
-$black:#000000;
+$black:#1c262e;
 $white:#ffffff;
 $tundora:#444444;
 $dusty-gray:#999999;
@@ -42,7 +42,7 @@ html {
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: $sans;
   background: $black;
   background-image: linear-gradient(45deg, rgb(0, 0, 0), rgb(68, 68, 68));
   background-attachment: fixed;

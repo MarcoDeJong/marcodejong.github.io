@@ -1,0 +1,29 @@
+.header {
+  background-color:$black;
+  height:50px;
+  left:0;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:1;
+}
+.header__circle {
+  background-color:$blue-chill;
+  border-radius:50%;
+  display:inline-block;
+  height:25px;
+  width:25px;
+}
+.header__title,
+.header__subtitle {
+  font-size: $txt;
+  font-family: $sans;
+  font-weight: 400;
+  line-height: 0.7em;
+}
+.header__title {
+  color: $white;
+}
+.header__subtitle {
+  color: $dusty-gray;
+}
