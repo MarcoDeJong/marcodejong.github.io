@@ -8,6 +8,10 @@
 }
 .page__content {
   color:$dusty-gray;
+  line-height:1.618;
+}
+.page__content::selection {
+  background-color:$blue-chill;
 }
 .page__content h1 {
   color:$white;
@@ -17,5 +21,5 @@
   display: block;
   border-top: .25rem solid $blue-chill;
   width: 2rem;
-  margin-bottom: 1rem;
+  margin-bottom: 0.75rem;
 }
