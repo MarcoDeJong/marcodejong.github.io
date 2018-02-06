@@ -23,6 +23,12 @@
   border-top: .25rem solid $blue-chill;
   width: 2rem;
 }
-.page__content p {
-  text-shadow: 0 0 2px rgba(0,0,0,0.9);
+.page__content h2 {
+  color:$blue-chill;
+  text-shadow: 0 1px 4px #000;
+}
+.page_content a {
+  text-decoration:underline;
+  -webkit-text-decoration-skip:auto;
+  text-decoration-skip:auto;
 }
