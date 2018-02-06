@@ -32,6 +32,6 @@
 .page__content a:visited {
   color:$blue-chill;
   text-decoration:underline;
-  -webkit-text-decoration-skip:auto;
-  text-decoration-skip:auto;
+  text-decoration-skip:ink;
+  text-decoration-skip-ink:auto;
 }
