@@ -27,7 +27,10 @@
   color:$blue-chill;
   margin-top:2em;
 }
-.page_content a {
+.page_content a,
+.page-content a:hover,
+.page-content a:visited {
+  color:$blue-chill;
   text-decoration:underline;
   -webkit-text-decoration-skip:auto;
   text-decoration-skip:auto;
