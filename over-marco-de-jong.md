@@ -13,7 +13,7 @@ Weet technisch complexe concepten helder te verwoorden en brug te slaan tussen o
 een ‘can-do’ mentaliteit, altijd oplossingsgericht.
 
 Bekende projecten waar ik mijn stempel op heb mogen drukken:
-The Voice Of Holland, Ziggo interactive TV & Nationale Vacaturebank. Maak vaak tijdelijk deel uit van bestaand team
+[The Voice Of Holland](http://www.thevoiceofholland.com){:rel="noopener"}, [Ziggo Interactieve TV](http://www.ziggo.nl){:rel="noopener"} & [Nationale Vacaturebank](http://www.nationalevacaturebank.nl){:rel="noopener"}. Maak vaak tijdelijk deel uit van bestaand team
 en ben uiterst flexibel.
 
 Mijn karakteristieke motto: ‘If you can dream it, you can do it!’
