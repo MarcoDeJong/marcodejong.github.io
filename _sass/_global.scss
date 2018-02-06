@@ -64,6 +64,11 @@ blockquote {
   padding-left: 1rem;
   border-left: 3px solid #0f9591;
 }
+.ui__img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
 .ui__center {
   text-align: center;
 }

@@ -18,6 +18,7 @@ en ben uiterst flexibel.
 
 Mijn karakteristieke motto: ‘If you can dream it, you can do it!’
 
+![Marco de Jong]("/img/marco-de-jong2.jpg"){:class="ui__img"}
 
 Wat anderen zeggen
 ------------------
