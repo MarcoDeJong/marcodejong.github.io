@@ -21,17 +21,17 @@ Mijn karakteristieke motto: ‘If you can dream it, you can do it!’
 
 Wat anderen zeggen
 ------------------
-Olga Kleinlooh (Brand Manager Intermediair)
->Marco is in staat snel te schakelen, mee te denken vanuit de business en hij denkt vanuit een probleem in oplossingen.
+**Olga Kleinlooh** (Brand Manager Intermediair)
+>"Marco is in staat snel te schakelen, mee te denken vanuit de business en hij denkt vanuit een probleem in oplossingen."
 
-Bas Slager (Freelance sr. software engineer)
->Marco is a very pleasant person to work with and dedicated in doing the right things the right way.
+**Bas Slagter** (Freelance sr. software engineer)
+>"Marco is a very pleasant person to work with and dedicated in doing the right things the right way."
 
-Pieter Vogelaar (Freelance DevOps)
->Marco is een open collega waarop je kunt bouwen in een project.
+**Pieter Vogelaar** (Freelance DevOps)
+>"Marco is een open collega waarop je kunt bouwen in een project."
 
-Marcel Knol (Managing Partner - Iunxi)
->Zijn technische kennis en zijn fanatisme en liefde voor het internet, muziek en nieuwe media waren belangrijk voor de ontwikkeling die TMF en MTV in Nederland hebben doorgemaakt op het gebied van internet
+**Marcel Knol** (Managing Partner - Iunxi)
+>"Zijn technische kennis en zijn fanatisme en liefde voor het internet, muziek en nieuwe media waren belangrijk voor de ontwikkeling die TMF en MTV in Nederland hebben doorgemaakt op het gebied van internet."
 
-Kevin Goossens (Product Manager - VRT)
->I remember Marco as an always optimist person. Very solution oriented, creative and a hands-on guy.
+**Kevin Goossens** (Product Manager - VRT)
+>"I remember Marco as an always optimist person. Very solution oriented, creative and a hands-on guy."
