@@ -1,6 +1,6 @@
 .page {
   margin: auto;
-  max-width: 500px;
+  max-width: 540px;
   padding-bottom: 60px;
   padding-left: 20px;
   padding-right: 20px;
@@ -19,8 +19,8 @@
     &::before {
       content: '';
       display: block;
-      border-top: .25rem solid $blue-chill;
-      width: 2rem;
+      border-top: 3px solid $blue-chill;
+      width: 3rem;
     }
   }
   h2 {
