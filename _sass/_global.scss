@@ -56,6 +56,7 @@ body {
   background:
           $black linear-gradient(to bottom, $tundora, $black)
           no-repeat top;
+  background-attachment: fixed;
   background-size: 100% 200px;
   font-size: 16px;
   font-weight: 400;
