@@ -45,16 +45,16 @@ html {
 body {
   font-family: $sans;
   background:
-          -webkit-gradient(linear, left top, left bottom, from($tundora), to($black))
+          $black -webkit-gradient(linear, left top, left bottom, from($tundora), to($black))
           no-repeat top;
   background:
-          -webkit-linear-gradient(top, $tundora, $black)
+          $black -webkit-linear-gradient(top, $tundora, $black)
           no-repeat top;
   background:
-          -o-linear-gradient(top, $tundora, $black)
+          $black -o-linear-gradient(top, $tundora, $black)
           no-repeat top;
   background:
-          linear-gradient(to bottom, $tundora, $black)
+          $black linear-gradient(to bottom, $tundora, $black)
           no-repeat top;
   background-size: 100% 200px;
   font-size: 16px;
