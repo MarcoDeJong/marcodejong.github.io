@@ -49,15 +49,23 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  margin-top: 2rem;
+  margin: 2rem auto;
   max-width: 800px;
+  width: 100%;
 }
 .two-column p {
+  color: rgba($white, 0.88);
   font-size: 1rem;
   line-height: 1.5;
+}
+.two-column h3 {
+  color: $white;
+  font-size: $txt-l;
+  margin-bottom: 0.5rem;
 }
 @media (max-width: 700px) {
   .two-column {
     grid-template-columns: 1fr;
+    text-align: center;
   }
 }
