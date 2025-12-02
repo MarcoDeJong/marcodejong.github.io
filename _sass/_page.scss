@@ -14,26 +14,26 @@
     background-color: $blue-chill;
   }
   h1 {
-    color:$white;
+    color: $white;
     text-shadow: 0 1px 4px #000;
     &::before {
-      content: '';
+      content: "";
       display: block;
       border-top: 3px solid $blue-chill;
       width: 3rem;
     }
   }
   h2 {
-    color:$blue-chill;
-    margin-top:2em;
+    color: $blue-chill;
+    margin-top: 2em;
   }
   strong {
-    color:$white;
+    color: $white;
   }
   a {
-    color:$blue-chill;
-    text-decoration:underline;
-    text-decoration-skip:ink;
-    text-decoration-skip-ink:auto;
+    color: $blue-chill;
+    text-decoration: underline;
+    text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
   }
 }

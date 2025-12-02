@@ -1,11 +1,12 @@
-.social-bar {}
+.social-bar {
+}
 
 .social-bar__list {
   font-size: $txt;
   list-style: none;
   margin-bottom: $margin-s;
   margin-top: $margin-s/2;
-  padding:0;
+  padding: 0;
 }
 
 .social-bar__listitem {

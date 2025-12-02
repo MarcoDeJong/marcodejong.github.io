@@ -1,9 +1,9 @@
 .landing {
   display: flex;
-  flex-direction:column;
-  padding:25px;
-  @media all and (min-width:768px) {
-    padding:0;
+  flex-direction: column;
+  padding: 25px;
+  @media all and (min-width: 768px) {
+    padding: 0;
   }
 }
 
@@ -12,7 +12,7 @@
   font-size: $txt-l;
   font-family: $sans;
   font-weight: 400;
-  line-height:0.7em;
+  line-height: 0.7em;
   @media all and (min-width: 480px) {
     font-size: $txt-xl;
   }
@@ -25,23 +25,39 @@
   text-shadow: 0 1px 4px #000;
 }
 .landing__subtitle {
-  color:$dusty-gray;
-  margin-bottom:$margin-m;
+  color: $dusty-gray;
+  margin-bottom: $margin-m;
   @media all and (min-width: 768px) {
     margin-bottom: $margin-l;
   }
 }
 
 .landing__image {
-  background:transparent url('../img/marco-dejong.jpg');
+  background: transparent url("../img/marco-dejong.jpg");
   background-size: cover;
   border: 10px solid $blue-chill;
   border-radius: 50%;
   height: 200px;
   margin: 0 auto;
   width: 200px;
-  @media all and (min-width:768px) {
+  @media all and (min-width: 768px) {
     height: 280px;
     width: 280px;
+  }
+}
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+  max-width: 800px;
+}
+.two-column p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+@media (max-width: 700px) {
+  .two-column {
+    grid-template-columns: 1fr;
   }
 }

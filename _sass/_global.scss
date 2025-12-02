@@ -1,14 +1,14 @@
-$black:#000000;
-$white:#ffffff;
-$tundora:#444444;
-$dusty-gray:#999999;
-$blue-chill:#0f9591;
+$black: #000000;
+$white: #ffffff;
+$tundora: #444444;
+$dusty-gray: #999999;
+$blue-chill: #0f9591;
 
 $instagram: #c13584;
 $linkedin: #0077b5;
 $github: #666;
 
-$sans: 'Raleway', Helvetica, Arial, sans-serif;
+$sans: "Raleway", Helvetica, Arial, sans-serif;
 
 $margin-l: 75px;
 $margin-m: 50px;
@@ -39,7 +39,6 @@ body {
   font-family: $sans;
   background: linear-gradient(to bottom, $tundora, $black) no-repeat top;
   background-attachment: fixed;
-  background-size: 100% 200px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
@@ -66,6 +65,6 @@ blockquote {
   text-align: center;
 }
 .ui__emphasize {
-  color:$blue-chill;
-  font-weight:bold;
+  color: $blue-chill;
+  font-weight: bold;
 }
