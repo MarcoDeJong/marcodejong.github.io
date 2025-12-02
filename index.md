@@ -4,7 +4,7 @@ layout: landing
 ---
 
 <h1 class="landing__title">Marco <strong>de Jong</strong></h1>
-<h2 class="landing__subtitle">Developer • Songwriter</span></h2>
+<h2 class="landing__subtitle">Developer • Songwriter</h2>
 <div class="landing__image"></div>
 
 <div class="two-column">
