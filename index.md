@@ -10,10 +10,10 @@ layout: landing
 <div class="two-column">
 <div>
 <h3>Development</h3>
-<p>Full Stack Developer met jarenlang ervaring in moderne webprojecten. Snel, schaalbaar en pragmatisch bouwen is mijn focus.</p>
+<p>Jarenlange Full Stack ervaring in moderne webprojecten. Ik specialiseer me in het snel en pragmatisch leveren van robuuste en toekomstbestendige software. De focus ligt op schaalbare oplossingen die direct meetbaar resultaat boeken voor de organisatie.</p>
 </div>
 <div>
 <h3>Songwriting (als Marco John)</h3>
-<p>Nederlandstalige pop, tienerpop en hedendaagse popformats. Focus op sterke hooks en commerciële teksten. Focus op sterke hooks en commerciële teksten.</p>
+<p>Als Marco John ben ik een commercieel-creatieve maker van popformats. Ik combineer hitgevoelige teksten en onweerstaanbare hooks met de ontwikkeling van het bijbehorende artistieke concept.</p>
 </div>
 </div>
