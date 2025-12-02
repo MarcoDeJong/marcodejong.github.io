@@ -1,5 +1,4 @@
 ---
-title: Full Stack Developer
 layout: landing
 ---
 
