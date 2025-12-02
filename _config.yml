@@ -10,5 +10,5 @@ google_analytics: G-VL9396KZFV
 markdown: kramdown
 permalink: none
 
-gems:
+plugins:
   - jekyll-sitemap
