@@ -3,10 +3,12 @@
   {% include head.html %}
   <body>
     <div class="landing">
-      <main class="landing__content ui__center">
+      <main class="landing__content ui__center" role="main">
         {{ content }}
       </main>
-      {% include social.html %}
+      <nav aria-label="Social links">
+        {% include social.html %}
+      </nav>
     </div>
   </body>
 </html>

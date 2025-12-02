@@ -18,16 +18,14 @@
   padding: 0 25px;
 
   &:hover {
-    .social-bar__twitter {
-      color: $twitter;
-    }
     .social-bar__github {
       color: $github;
     }
     .social-bar__linkedin {
       color: $linkedin;
     }
+    .social-bar__instagram {
+      color: $instagram;
+    }
   }
 }
-
-

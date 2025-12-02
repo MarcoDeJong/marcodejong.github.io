@@ -4,9 +4,7 @@ $tundora:#444444;
 $dusty-gray:#999999;
 $blue-chill:#0f9591;
 
-$twitter: #55acee;
 $instagram: #c13584;
-$snapchat: #fffc00;
 $linkedin: #0077b5;
 $github: #666;
 
@@ -28,40 +26,24 @@ $txt: 1rem;
 $txt-sm: 0.75em;
 
 html {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height:100%;
 }
 
 *,
 *::before,
 *::after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
   box-sizing: inherit;
 }
 
 body {
   font-family: $sans;
-  background:
-          $black -webkit-gradient(linear, left top, left bottom, from($tundora), to($black))
-          no-repeat top;
-  background:
-          $black -webkit-linear-gradient(top, $tundora, $black)
-          no-repeat top;
-  background:
-          $black -o-linear-gradient(top, $tundora, $black)
-          no-repeat top;
-  background:
-          $black linear-gradient(to bottom, $tundora, $black)
-          no-repeat top;
+  background: linear-gradient(to bottom, $tundora, $black) no-repeat top;
   background-attachment: fixed;
   background-size: 100% 200px;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
-  height:100vh;
+  min-height: 100vh;
   overflow-x: hidden;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
