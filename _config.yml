@@ -4,6 +4,7 @@ email: info@marco-dejong.nl
 description: Marco de Jong - Freelance Full Stack Developer. Fixing the web one site at a time. Award winning. Certified. How can I help you?
 url: "https://marco-dejong.nl"
 twitter_username: marcodejong
+google_analytics: UA-24526135-1
 
 # Build settings
 markdown: kramdown
