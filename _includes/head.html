@@ -7,10 +7,13 @@
   <meta name=author content="Marco de Jong">
   <meta name=robots content="index, follow">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.url }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="{{ '/css/app.css?v=' | append: site.github.build_revision | relative_url }}">
   {% if site.google_analytics %}
     {% include analytics.html %}
   {% endif %}
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css" integrity="sha256-ecCS0lYw3LQprbpQssusW5dLcR79p3KSe/HPyxWT0yk=" crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/v4-shims.min.css" integrity="sha256-zToMqlM7ND08xjY2sUTYPlXDxWbWBrPRFhlQoK/Xt7E=" crossorigin="anonymous" referrerpolicy="no-referrer">
 </head>
