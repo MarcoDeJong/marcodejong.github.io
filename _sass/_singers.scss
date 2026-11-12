@@ -1,61 +1,84 @@
 .singers {
-  margin: $margin-l auto;
-  max-width: 800px;
-  width: 100%;
+  background: $acid-lime;
+  isolation: isolate;
+  overflow: hidden;
+  position: relative;
+}
+
+.singers::before {
+  aspect-ratio: 1;
+  border: clamp(1.75rem, 4.5vw, 4rem) solid $electric-blue;
+  border-radius: 50%;
+  content: "";
+  outline: 1px solid $electric-blue;
+  outline-offset: clamp(0.55rem, 1.4vw, 1.2rem);
+  position: absolute;
+  right: max(-9rem, calc((100vw - 88rem) / 2));
+  top: 50%;
+  transform: translateY(-50%);
+  width: clamp(21rem, 42vw, 39rem);
+  z-index: -1;
+}
+
+.singers__inner {
+  padding-block: clamp(3.5rem, 7vw, 6.5rem);
 }
 
 .singers__content {
-  background: $paper;
-  border-radius: 2rem;
-  color: $ink;
-  padding: $margin-s;
-  text-align: left;
-
-  @media all and (min-width: 768px) {
-    padding: $margin-m;
-  }
+  max-width: min(40rem, 64%);
 }
 
-.singers h2 {
-  color: $electric-blue;
-  font-size: $txt-xl;
-  line-height: 1.1;
-  margin: 0 0 $margin-xs;
-
-  @media all and (min-width: 768px) {
-    font-size: $txt-xxxl;
-  }
+.singers .section-title {
+  font-size: clamp(2.9rem, 6.1vw, 5.75rem);
+  max-width: 12ch;
 }
 
-.singers p {
-  font-size: $txt-m;
+.singers__content > p:not(.section-kicker) {
+  font-size: 1.125rem;
   line-height: 1.6;
-  margin: 0;
+  max-width: 48ch;
 }
 
-.singers p + p {
-  margin-top: $margin-xs;
+.singers__content h2 + p {
+  margin-top: 1.5rem;
+}
+
+.singers__content > p:not(.section-kicker) + p {
+  margin-top: 0.9rem;
 }
 
 .singers__link {
-  background: $acid-lime;
-  border: 3px solid $ink;
-  border-radius: 999px;
-  color: $ink;
-  display: inline-block;
-  font-weight: 700;
-  margin-top: $margin-s;
-  overflow-wrap: anywhere;
-  padding: 0.75rem 1.25rem;
-  transition: background-color 150ms ease, color 150ms ease;
+  margin-top: 1.75rem;
+}
 
-  &:hover {
-    background: $electric-blue;
-    color: $paper;
+.singers__link:focus-visible {
+  outline-color: $ink;
+}
+
+@media all and (max-width: 48rem) {
+  .singers::before {
+    right: -13rem;
   }
 
-  &:focus-visible {
-    outline: 3px solid $electric-blue;
-    outline-offset: 4px;
+  .singers__content {
+    max-width: min(32rem, 78%);
+  }
+}
+
+@media all and (max-width: 34rem) {
+  .singers::before {
+    bottom: -9rem;
+    right: -7rem;
+    top: auto;
+    transform: none;
+    width: 14rem;
+  }
+
+  .singers__inner {
+    padding-bottom: 6.5rem;
+  }
+
+  .singers__content {
+    max-width: 100%;
   }
 }

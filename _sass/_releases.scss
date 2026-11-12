@@ -1,75 +1,46 @@
-.releases {
-  margin: $margin-l auto;
-  max-width: 800px;
-  width: 100%;
-}
-
-.releases > h2 {
-  color: $paper;
-  font-size: $txt-xl;
-  margin-bottom: $margin-s;
-}
-
 .releases__list {
-  display: grid;
-  gap: $margin-s;
+  margin-top: 1.75rem;
 }
 
 .release-card {
-  background: $acid-lime;
-  border-radius: 2rem;
-  color: $ink;
-  padding: $margin-s;
-  text-align: left;
-
-  @media all and (min-width: 768px) {
-    padding: $margin-m;
-  }
+  align-items: center;
+  border-block: 1px solid $rule;
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  grid-template-columns: minmax(0, 0.9fr) minmax(280px, 1.1fr);
+  padding-block: clamp(1.5rem, 3.5vw, 2.5rem);
 }
 
 .release-card h3 {
-  font-size: $txt-xl;
-  line-height: 1.1;
-  margin: 0 0 $margin-xs;
-
-  @media all and (min-width: 768px) {
-    font-size: $txt-xxxl;
-  }
+  font-size: clamp(1.75rem, 3.2vw, 2.85rem);
+  font-weight: 900;
+  letter-spacing: -0.06em;
+  line-height: 1;
 }
 
 .release-card p {
-  font-size: $txt-m;
+  color: $muted;
+  font-size: 1.0625rem;
   line-height: 1.6;
-  margin: 0;
+  margin-top: 0.75rem;
+  max-width: 46ch;
 }
 
 .release-card__embed {
+  background: #121212;
   border: 0;
-  border-radius: 12px;
+  border-radius: 0.75rem;
   display: block;
   height: 152px;
-  margin-top: $margin-s;
   width: 100%;
 }
 
 .release-card__link {
-  background: $ink;
-  border: 3px solid $ink;
-  border-radius: 999px;
-  color: $paper;
-  display: inline-block;
-  font-weight: 700;
-  margin-top: $margin-s;
-  padding: 0.75rem 1.25rem;
-  transition: background-color 150ms ease, border-color 150ms ease;
+  margin-top: 1.25rem;
+}
 
-  &:hover {
-    background: $electric-blue;
-    border-color: $electric-blue;
-  }
-
-  &:focus-visible {
-    outline: 3px solid $electric-blue;
-    outline-offset: 4px;
+@media all and (max-width: 48rem) {
+  .release-card {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

@@ -1,42 +1,30 @@
 .collaboration {
-  margin: $margin-l auto;
-  max-width: 800px;
-  text-align: left;
-  width: 100%;
-}
-
-.collaboration h2 {
-  color: $acid-lime;
-  font-size: $txt-xl;
-  line-height: 1.1;
-  margin: 0 0 $margin-xs;
-
-  @media all and (min-width: 768px) {
-    font-size: $txt-xxxl;
-  }
-}
-
-.collaboration p {
+  background: $electric-blue;
   color: $paper;
-  font-size: $txt-m;
-  line-height: 1.6;
-  margin: 0;
-
-  @media all and (min-width: 768px) {
-    font-size: $txt-l;
-  }
 }
 
-.collaboration a {
-  color: $acid-lime;
-  font-weight: 700;
+.collaboration__inner {
+  display: grid;
+  gap: 1.5rem clamp(1.5rem, 7vw, 6rem);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.28fr);
+  padding-block: var(--section-space);
+}
 
-  &:hover {
-    color: $paper;
-  }
+.collaboration__copy {
+  font-size: clamp(1.125rem, 2vw, 1.4rem);
+  max-width: 42ch;
+}
 
-  &:focus-visible {
-    outline: 3px solid $acid-lime;
-    outline-offset: 4px;
+.collaboration__link {
+  margin-top: 1.5rem;
+}
+
+.collaboration__link:focus-visible {
+  outline-color: $paper;
+}
+
+@media all and (max-width: 34rem) {
+  .collaboration__inner {
+    grid-template-columns: minmax(0, 1fr);
   }
 }

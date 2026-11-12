@@ -1,68 +1,136 @@
-.landing {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-  @media all and (min-width: 768px) {
-    padding: 0;
-  }
+.landing,
+.landing__content {
+  min-height: 100vh;
+  width: 100%;
+}
+
+.masthead {
+  background: $electric-blue;
+  color: $paper;
+  overflow: clip;
+}
+
+.hero {
+  align-items: center;
+  display: grid;
+  gap: clamp(2rem, 5vw, 4.5rem);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+  padding-block: clamp(3.5rem, 7vw, 6.5rem);
 }
 
 .landing__title {
-  color: $paper;
-  font-size: $txt-xl;
-  font-family: $sans;
-  font-weight: 400;
-  line-height: 1.05;
-  margin-bottom: $margin-xs;
-  text-shadow: 0 1px 4px $ink;
-  @media all and (min-width: 480px) {
-    font-size: $txt-xxxl;
-  }
-  @media all and (min-width: 768px) {
-    font-size: $txt-xxxxl;
-  }
+  font-size: clamp(4rem, 9.4vw, 8.6rem);
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  line-height: 0.9;
 }
+
+.landing__title span,
+.landing__title strong {
+  display: block;
+  font-weight: inherit;
+}
+
+.landing__title small {
+  color: $acid-lime;
+  display: block;
+  font-size: clamp(1rem, 1.8vw, 1.35rem);
+  font-weight: 800;
+  letter-spacing: 0.015em;
+  line-height: 1.2;
+  margin-top: 1.4rem;
+}
+
 .landing__subtitle {
-  color: $paper;
-  font-family: $sans;
-  font-size: $txt;
-  line-height: 1.5;
-  margin: 0 auto $margin-m;
-  max-width: 44rem;
-  @media all and (min-width: 480px) {
-    font-size: $txt-m;
-  }
-  @media all and (min-width: 768px) {
-    font-size: $txt-l;
-    margin-bottom: $margin-l;
-  }
+  font-size: clamp(1.075rem, 1.9vw, 1.4rem);
+  line-height: 1.4;
+  margin-top: 0.65rem;
+  max-width: 35ch;
+}
+
+.hero__art {
+  display: grid;
+  isolation: isolate;
+  justify-self: end;
+  max-width: 33rem;
+  place-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.hero__art::before,
+.hero__art::after {
+  aspect-ratio: 1;
+  border-radius: 50%;
+  content: "";
+  position: absolute;
+}
+
+.hero__art::before {
+  border: 1px solid rgba($paper, 0.52);
+  inset-block-start: -22%;
+  inset-inline-start: 14%;
+  width: 133%;
+  z-index: -1;
+}
+
+.hero__art::after {
+  background: $acid-lime;
+  inset-block-end: 7%;
+  inset-inline-start: 7%;
+  width: 18%;
 }
 
 .landing__image {
-  background: transparent url("../img/marco-dejong.jpg");
-  background-size: cover;
-  border: 10px solid $acid-lime;
+  aspect-ratio: 1;
+  background: $acid-lime;
+  border: clamp(0.6rem, 1.45vw, 1.1rem) solid $acid-lime;
   border-radius: 50%;
-  height: 200px;
-  margin: 0 auto;
-  width: 200px;
-  @media all and (min-width: 768px) {
-    height: 280px;
-    width: 280px;
+  display: block;
+  height: auto;
+  object-fit: cover;
+  width: 86%;
+}
+
+.landing__intro {
+  display: grid;
+  gap: 1.5rem clamp(1.5rem, 7vw, 6rem);
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.28fr);
+  margin-top: var(--section-space);
+}
+
+.landing__intro-copy {
+  color: $muted;
+  font-size: clamp(1.0625rem, 1.8vw, 1.25rem);
+  max-width: 50ch;
+}
+
+.landing__intro-copy p + p {
+  margin-top: 1em;
+}
+
+@media all and (max-width: 48rem) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .landing__title {
+    font-size: clamp(4rem, 14vw, 7rem);
+  }
+
+  .hero__art {
+    justify-self: center;
+    width: min(100%, 23rem);
+  }
+
+  .hero__art::before {
+    inset-block-start: -10%;
+    width: 116%;
   }
 }
-.landing__intro {
-  margin: 2rem auto;
-  max-width: 640px;
-  width: 100%;
-}
-.landing__intro p {
-  color: rgba($paper, 0.9);
-  font-size: 1rem;
-  line-height: 1.5;
-}
-.landing__intro h2 {
-  color: $acid-lime;
-  font-size: $txt-l;
-  margin-bottom: 0.5rem;
+
+@media all and (max-width: 34rem) {
+  .landing__intro {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }

@@ -1,16 +1,23 @@
 .error-page {
   align-items: center;
+  background: $electric-blue;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: 0 auto;
-  max-width: 42rem;
+  max-width: none;
   min-height: calc(100vh - 50px);
-  padding: $margin-s 0;
+  padding: var(--section-space) var(--gutter);
+  text-align: center;
+  width: 100%;
 
   @media all and (min-width: 768px) {
     min-height: 100vh;
   }
+}
+
+.error-page > * {
+  max-width: 42rem;
 }
 
 .error-page__code {
