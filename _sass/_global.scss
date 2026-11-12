@@ -75,7 +75,8 @@ section[id] {
 
 .wrap {
   margin-inline: auto;
-  width: min(calc(100% - var(--gutter) - var(--gutter)), 73rem);
+  max-width: 73rem;
+  width: calc(100% - var(--gutter) - var(--gutter));
 }
 
 .content {

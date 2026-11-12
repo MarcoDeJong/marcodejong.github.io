@@ -13,7 +13,7 @@
   outline: 1px solid $electric-blue;
   outline-offset: clamp(0.55rem, 1.4vw, 1.2rem);
   position: absolute;
-  right: max(-9rem, calc((100vw - 88rem) / 2));
+  right: -9rem;
   top: 50%;
   transform: translateY(-50%);
   width: clamp(21rem, 42vw, 39rem);
@@ -25,7 +25,8 @@
 }
 
 .singers__content {
-  max-width: min(40rem, 64%);
+  max-width: 40rem;
+  width: 64%;
 }
 
 .singers .section-title {
@@ -61,7 +62,14 @@
   }
 
   .singers__content {
-    max-width: min(32rem, 78%);
+    max-width: 32rem;
+    width: 78%;
+  }
+}
+
+@media all and (min-width: 88rem) {
+  .singers::before {
+    right: calc((100vw - 88rem) / 2);
   }
 }
 
@@ -80,5 +88,6 @@
 
   .singers__content {
     max-width: 100%;
+    width: 100%;
   }
 }

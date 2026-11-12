@@ -120,7 +120,8 @@
 
   .hero__art {
     justify-self: center;
-    width: min(100%, 23rem);
+    max-width: 23rem;
+    width: 100%;
   }
 
   .hero__art::before {
