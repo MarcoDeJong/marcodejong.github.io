@@ -5,7 +5,7 @@ layout: landing
 <header class="masthead">
 <div class="wrap hero">
 <div class="hero__copy">
-<h1 class="landing__title"><span>Marco</span><strong>de Jong</strong><small>· Songwriter</small></h1>
+<h1 class="landing__title"><span>Marco</span><strong>de Jong</strong><small>Songwriter</small></h1>
 <p class="landing__subtitle">Ik schrijf teksten en melodieën voor Nederlandstalige pop, van kinder- en tienerpop tot levenslied.</p>
 </div>
 <div class="hero__art">
