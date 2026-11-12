@@ -11,7 +11,9 @@ permissions:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    # Ubuntu 26.04 only provides the latest patch release of each Ruby series.
+    # Pin 24.04 so the workflow can use the exact GitHub Pages Ruby version.
+    runs-on: ubuntu-24.04
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
