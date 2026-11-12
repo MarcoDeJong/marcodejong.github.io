@@ -7,27 +7,33 @@
   }
 }
 
-.landing__title,
-.landing__subtitle {
-  font-size: $txt-l;
-  font-family: $sans;
-  font-weight: 400;
-  line-height: 0.7em;
-  @media all and (min-width: 480px) {
-    font-size: $txt-xl;
-  }
-  @media all and (min-width: 768px) {
-    font-size: $txt-xxxl;
-  }
-}
 .landing__title {
   color: $paper;
+  font-size: $txt-xl;
+  font-family: $sans;
+  font-weight: 400;
+  line-height: 1.05;
+  margin-bottom: $margin-xs;
   text-shadow: 0 1px 4px $ink;
+  @media all and (min-width: 480px) {
+    font-size: $txt-xxxl;
+  }
+  @media all and (min-width: 768px) {
+    font-size: $txt-xxxxl;
+  }
 }
 .landing__subtitle {
   color: $paper;
-  margin-bottom: $margin-m;
+  font-family: $sans;
+  font-size: $txt;
+  line-height: 1.5;
+  margin: 0 auto $margin-m;
+  max-width: 44rem;
+  @media all and (min-width: 480px) {
+    font-size: $txt-m;
+  }
   @media all and (min-width: 768px) {
+    font-size: $txt-l;
     margin-bottom: $margin-l;
   }
 }
@@ -45,27 +51,18 @@
     width: 280px;
   }
 }
-.two-column {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+.landing__intro {
   margin: 2rem auto;
-  max-width: 800px;
+  max-width: 640px;
   width: 100%;
 }
-.two-column p {
+.landing__intro p {
   color: rgba($paper, 0.9);
   font-size: 1rem;
   line-height: 1.5;
 }
-.two-column h3 {
+.landing__intro h2 {
   color: $acid-lime;
   font-size: $txt-l;
   margin-bottom: 0.5rem;
-}
-@media (max-width: 700px) {
-  .two-column {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
 }
