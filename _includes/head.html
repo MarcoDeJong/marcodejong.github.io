@@ -2,12 +2,13 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }} | {{ site.title }}</title>
+  <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="author" content="Marco de Jong">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <meta name="theme-color" content="#444444"/>
+  <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">
 
   <!-- Open Graph -->
   <meta property="og:title" content="{{ page.title | default: site.title }}">
