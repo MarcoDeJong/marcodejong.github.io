@@ -29,8 +29,8 @@ layout: landing
 </div>
 </section>
 
-<section class="landing__intro" aria-labelledby="songwriting-title">
-<h2 class="section-title" id="songwriting-title">Songwriting</h2>
+<section class="landing__intro" aria-labelledby="about-title">
+<h2 class="section-title" id="about-title">Over mij</h2>
 <div class="landing__intro-copy">
 <p>Jaren geleden maakte ik jingles en commercials. Daarna kwam muziek steeds meer op de achtergrond te staan. Er was werk, werk en meer werk.</p>
 <p>Tot het weer begon te kriebelen.</p>
