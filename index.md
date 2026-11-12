@@ -8,5 +8,7 @@ layout: landing
 
 <section class="landing__intro">
 <h2>Songwriting</h2>
-<p>Als <strong>Marco John</strong> ben ik een commercieel-creatieve maker van popformats. Ik combineer hitgevoelige teksten en onweerstaanbare hooks met de ontwikkeling van het bijbehorende artistieke concept.</p>
+<p>Jaren geleden maakte ik jingles en commercials. Daarna kwam muziek steeds meer op de achtergrond te staan. Er was werk, werk en meer werk.</p>
+<p>Tot het weer begon te kriebelen.</p>
+<p>Sinds een tijdje schrijf, componeer en produceer ik weer. Ik werk aan Nederlandstalige nummers, van kinder- en tienerpop tot levenslied.</p>
 </section>
