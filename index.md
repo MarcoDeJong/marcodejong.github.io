@@ -24,3 +24,13 @@ layout: landing
 </article>
 </div>
 </section>
+
+<section class="singers" aria-labelledby="singers-title">
+<div class="singers__content">
+<h2 id="singers-title">Zangers gezocht</h2>
+<p>Ik schrijf Nederlandstalige nummers en zoek mensen die het leuk vinden om af en toe een demo in te zingen. Die gebruik ik om mijn nummers te laten horen aan mogelijke uitvoerende artiesten.</p>
+<p>Zing jij graag pop en lijkt je dat leuk? Stuur me een mail met een filmpje of geluidsfragment waarin je zingt.</p>
+<p>Ken je iemand met een fijne stem? Stuur dit gerust door!</p>
+<a class="singers__link" href="mailto:demo@marco-dejong.nl">Mail je demo naar demo@marco-dejong.nl</a>
+</div>
+</section>

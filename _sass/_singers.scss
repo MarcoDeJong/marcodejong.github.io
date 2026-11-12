@@ -1,0 +1,61 @@
+.singers {
+  margin: $margin-l auto;
+  max-width: 800px;
+  width: 100%;
+}
+
+.singers__content {
+  background: $paper;
+  border-radius: 2rem;
+  color: $ink;
+  padding: $margin-s;
+  text-align: left;
+
+  @media all and (min-width: 768px) {
+    padding: $margin-m;
+  }
+}
+
+.singers h2 {
+  color: $electric-blue;
+  font-size: $txt-xl;
+  line-height: 1.1;
+  margin: 0 0 $margin-xs;
+
+  @media all and (min-width: 768px) {
+    font-size: $txt-xxxl;
+  }
+}
+
+.singers p {
+  font-size: $txt-m;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.singers p + p {
+  margin-top: $margin-xs;
+}
+
+.singers__link {
+  background: $acid-lime;
+  border: 3px solid $ink;
+  border-radius: 999px;
+  color: $ink;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: $margin-s;
+  overflow-wrap: anywhere;
+  padding: 0.75rem 1.25rem;
+  transition: background-color 150ms ease, color 150ms ease;
+
+  &:hover {
+    background: $electric-blue;
+    color: $paper;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $electric-blue;
+    outline-offset: 4px;
+  }
+}
