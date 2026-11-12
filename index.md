@@ -12,3 +12,15 @@ layout: landing
 <p>Tot het weer begon te kriebelen.</p>
 <p>Sinds een tijdje schrijf, componeer en produceer ik weer. Ik werk aan Nederlandstalige nummers, van kinder- en tienerpop tot levenslied.</p>
 </section>
+
+<section class="releases" aria-labelledby="releases-title">
+<h2 id="releases-title">Releases</h2>
+<div class="releases__list">
+<article class="release-card">
+<h3>We Are NXT</h3>
+<p>Voor NXT schreef ik de tekst van <strong>‘We Are NXT’</strong>. Het nummer kwam in juni 2026 uit als single en staat ook op <em>Spot Aan</em>, het album van Kinderen voor Kinderen.</p>
+<iframe class="release-card__embed" src="https://open.spotify.com/embed/track/3zTm7TxioU0xLEahUA0eCQ" title="We Are NXT op Spotify" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<a class="release-card__link" href="https://open.spotify.com/track/3zTm7TxioU0xLEahUA0eCQ">Luister op Spotify</a>
+</article>
+</div>
+</section>

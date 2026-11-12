@@ -28,6 +28,8 @@ jobs:
           grep --fixed-strings --quiet '<title>Marco de Jong</title>' "$RUNNER_TEMP/homepage.html"
           grep --fixed-strings --quiet '<link rel="canonical" href="https://marco-dejong.nl/">' "$RUNNER_TEMP/homepage.html"
           grep --fixed-strings --quiet 'Ik schrijf teksten en melodieën voor Nederlandstalige pop' "$RUNNER_TEMP/homepage.html"
+          grep --fixed-strings --quiet 'Voor NXT schreef ik de tekst van' "$RUNNER_TEMP/homepage.html"
+          grep --fixed-strings --quiet 'https://open.spotify.com/track/3zTm7TxioU0xLEahUA0eCQ' "$RUNNER_TEMP/homepage.html"
 
       - name: Verify public assets
         shell: bash
