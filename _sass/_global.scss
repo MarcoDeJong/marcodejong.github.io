@@ -1,12 +1,7 @@
-$black: #000000;
-$white: #ffffff;
-$tundora: #444444;
-$dusty-gray: #999999;
-$blue-chill: #0f9591;
-
-$instagram: #c13584;
-$linkedin: #0077b5;
-$github: #666;
+$ink: #161112;
+$paper: #fefdfd;
+$electric-blue: #0001ed;
+$acid-lime: #d7fb17;
 
 $sans: "Raleway", Helvetica, Arial, sans-serif;
 
@@ -27,6 +22,7 @@ $txt-sm: 0.75em;
 
 html {
   box-sizing: border-box;
+  color-scheme: dark;
 }
 
 *,
@@ -37,8 +33,9 @@ html {
 
 body {
   font-family: $sans;
-  background: linear-gradient(to bottom, $tundora, $black) no-repeat top;
+  background: $electric-blue;
   background-attachment: fixed;
+  color: $paper;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.4;
@@ -54,7 +51,7 @@ blockquote {
   margin-bottom: 2rem;
   margin-left: 1rem;
   padding-left: 1rem;
-  border-left: 3px solid #0f9591;
+  border-left: 3px solid $acid-lime;
 }
 .ui__img {
   max-width: 100%;
@@ -65,6 +62,6 @@ blockquote {
   text-align: center;
 }
 .ui__emphasize {
-  color: $blue-chill;
+  color: $acid-lime;
   font-weight: bold;
 }

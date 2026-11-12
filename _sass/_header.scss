@@ -1,6 +1,6 @@
 .header {
   align-items: center;
-  background-color: $black;
+  background-color: $ink;
   display: flex;
   height: 50px;
   left: 0;
@@ -11,7 +11,7 @@
   z-index: 1;
 }
 .header__circle {
-  background-color: $blue-chill;
+  background-color: $acid-lime;
   border-radius: 50%;
   height: 25px;
   margin: 5px;
@@ -28,8 +28,8 @@
   }
 }
 .header__title {
-  color: $white;
+  color: $paper;
 }
 .header__subtitle {
-  color: $dusty-gray;
+  color: $paper;
 }

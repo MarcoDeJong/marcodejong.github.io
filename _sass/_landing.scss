@@ -21,11 +21,11 @@
   }
 }
 .landing__title {
-  color: $white;
-  text-shadow: 0 1px 4px #000;
+  color: $paper;
+  text-shadow: 0 1px 4px $ink;
 }
 .landing__subtitle {
-  color: $dusty-gray;
+  color: $paper;
   margin-bottom: $margin-m;
   @media all and (min-width: 768px) {
     margin-bottom: $margin-l;
@@ -35,7 +35,7 @@
 .landing__image {
   background: transparent url("../img/marco-dejong.jpg");
   background-size: cover;
-  border: 10px solid $blue-chill;
+  border: 10px solid $acid-lime;
   border-radius: 50%;
   height: 200px;
   margin: 0 auto;
@@ -54,12 +54,12 @@
   width: 100%;
 }
 .two-column p {
-  color: rgba($white, 0.88);
+  color: rgba($paper, 0.9);
   font-size: 1rem;
   line-height: 1.5;
 }
 .two-column h3 {
-  color: $blue-chill;
+  color: $acid-lime;
   font-size: $txt-l;
   margin-bottom: 0.5rem;
 }
