@@ -14,6 +14,9 @@ jobs:
     # Ubuntu 26.04 only provides the latest patch release of each Ruby series.
     # Pin 24.04 so the workflow can use the exact GitHub Pages Ruby version.
     runs-on: ubuntu-24.04
+    env:
+      JEKYLL_GITHUB_TOKEN: ${{ github.token }}
+      PAGES_REPO_NWO: ${{ github.repository }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v6
