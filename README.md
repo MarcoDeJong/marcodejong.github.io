@@ -28,6 +28,22 @@ bundle exec jekyll serve --livereload
 
 Open <http://localhost:4000>.
 
+## Deployment
+
+GitHub Pages is configured to publish from the `master` branch and the
+repository root using **Deploy from a branch**. GitHub's managed
+`pages build and deployment` workflow builds the Jekyll site, uploads the Pages
+artifact, and deploys it to the `github-pages` environment.
+
+Keep the custom domain configured as `marco-dejong.nl` in the repository's
+Pages settings. The `CNAME` file mirrors that setting, but does not configure
+the custom domain by itself.
+
+The workflows in this repository validate the source and the resulting live
+site; they do not perform a second deployment. If the publishing source is ever
+changed to **GitHub Actions**, replace this setup with GitHub's official Jekyll
+deployment workflow instead of running both deployment methods.
+
 ## Verification
 
 ```sh
