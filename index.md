@@ -49,6 +49,17 @@ layout: landing
 <p>Ken je iemand met een fijne stem? Stuur dit gerust door!</p>
 <a class="button button--dark singers__link" href="mailto:demo@marco-dejong.nl">Stuur je zangfragment <span class="button__arrow" aria-hidden="true">↗</span></a>
 </div>
+<div class="singers__visual" aria-hidden="true">
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+<span></span>
+</div>
 </div>
 </section>
 
