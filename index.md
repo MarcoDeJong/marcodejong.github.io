@@ -24,7 +24,7 @@ layout: landing
 <p>Voor NXT schreef ik de tekst van <strong>‘We Are NXT’</strong>. Het nummer kwam in juni 2026 uit als single en staat ook op <em>Spot Aan</em>, het album van Kinderen voor Kinderen.</p>
 <a class="button button--outline release-card__link" href="https://open.spotify.com/track/3zTm7TxioU0xLEahUA0eCQ">Luister op Spotify <span class="button__arrow" aria-hidden="true">↗</span></a>
 </div>
-<iframe class="release-card__embed" src="https://open.spotify.com/embed/track/3zTm7TxioU0xLEahUA0eCQ?theme=0" title="We Are NXT op Spotify" loading="lazy" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<iframe class="release-card__embed" src="https://open.spotify.com/embed/track/3zTm7TxioU0xLEahUA0eCQ?theme=0" title="We Are NXT op Spotify" loading="eager" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </article>
 </div>
 </section>
