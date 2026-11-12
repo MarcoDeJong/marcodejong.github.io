@@ -47,7 +47,7 @@ layout: landing
 <p>Ik schrijf Nederlandstalige nummers en zoek mensen die het leuk vinden om af en toe een demo in te zingen. Die gebruik ik om mijn nummers te laten horen aan mogelijke uitvoerende artiesten.</p>
 <p>Zing jij graag pop en lijkt je dat leuk? Stuur me een mail met een filmpje of geluidsfragment waarin je zingt.</p>
 <p>Ken je iemand met een fijne stem? Stuur dit gerust door!</p>
-<a class="button button--dark singers__link" href="mailto:demo@marco-dejong.nl">Mail je demo <span class="button__arrow" aria-hidden="true">↗</span></a>
+<a class="button button--dark singers__link" href="mailto:demo@marco-dejong.nl">Stuur je zangfragment <span class="button__arrow" aria-hidden="true">↗</span></a>
 </div>
 </div>
 </section>
