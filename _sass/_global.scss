@@ -90,13 +90,17 @@ section[id] {
   line-height: 0.98;
 }
 
-.section-kicker {
-  color: $electric-blue;
+.section-kicker,
+.landing__title small {
   font-size: 0.8125rem;
   font-weight: 900;
   letter-spacing: 0.14em;
-  margin-bottom: 0.8rem;
   text-transform: uppercase;
+}
+
+.section-kicker {
+  color: $electric-blue;
+  margin-bottom: 0.8rem;
 }
 
 .button {
