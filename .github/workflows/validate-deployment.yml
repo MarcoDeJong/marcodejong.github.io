@@ -51,6 +51,12 @@ jobs:
 
           http_status="$(curl --silent --show-error \
             --connect-timeout 10 --max-time 30 \
-            --output /dev/null --write-out '%{http_code}' \
+            --output "$RUNNER_TEMP/not-found.html" --write-out '%{http_code}' \
             "$SITE_URL/this-page-should-not-exist-smoke-test")"
           test "$http_status" = '404'
+          grep --fixed-strings --quiet 'Deze pagina bestaat niet.' "$RUNNER_TEMP/not-found.html"
+
+          if grep --ignore-case --quiet 'http-equiv="refresh"' "$RUNNER_TEMP/not-found.html"; then
+            echo 'The 404 page must not contain a meta refresh.' >&2
+            exit 1
+          fi

@@ -5,7 +5,7 @@
   <title>{% if page.title %}{{ page.title | escape }} | {% endif %}{{ site.title | escape }}</title>
   <meta name="description" content="{{ page.description | default: site.description }}">
   <meta name="author" content="Marco de Jong">
-  <meta name="robots" content="index, follow">
+  <meta name="robots" content="{{ page.robots | default: 'index, follow' }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <meta name="theme-color" content="#0001ed"/>
   <link rel="icon" href="{{ '/favicon.svg' | relative_url }}" type="image/svg+xml">

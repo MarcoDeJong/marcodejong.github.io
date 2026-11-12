@@ -1,0 +1,62 @@
+.error-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 42rem;
+  min-height: calc(100vh - 50px);
+  padding: $margin-s 0;
+
+  @media all and (min-width: 768px) {
+    min-height: 100vh;
+  }
+}
+
+.error-page__code {
+  color: $acid-lime;
+  font-size: $txt-xxxxxl;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0;
+}
+
+.error-page h1 {
+  color: $paper;
+  font-size: $txt-xl;
+  line-height: 1.15;
+  margin: $margin-xs 0;
+
+  @media all and (min-width: 768px) {
+    font-size: $txt-xxxl;
+  }
+}
+
+.error-page > p:not(.error-page__code) {
+  color: rgba($paper, 0.9);
+  font-size: $txt-m;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.error-page__link {
+  background: $acid-lime;
+  border: 3px solid $acid-lime;
+  border-radius: 999px;
+  color: $ink;
+  display: inline-block;
+  font-weight: 700;
+  margin-top: $margin-s;
+  padding: 0.75rem 1.25rem;
+  transition: background-color 150ms ease, color 150ms ease;
+
+  &:hover {
+    background: transparent;
+    color: $acid-lime;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $paper;
+    outline-offset: 4px;
+  }
+}

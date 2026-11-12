@@ -1,16 +1,14 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>404</title>
-    <!-- content 0 is treated as 301 redirect by search engines -->
-    <meta http-equiv="refresh" content="0;URL='/'">
-  </head>
-  <body>
-    <!-- make page greater than 512 bytes to fix IE issue -->
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  </body>
-</html>
+---
+layout: landing
+title: Pagina niet gevonden
+description: Deze pagina bestaat niet of is verplaatst.
+robots: noindex, follow
+sitemap: false
+---
+
+<section class="error-page" aria-labelledby="error-page-title">
+  <p class="error-page__code" aria-hidden="true">404</p>
+  <h1 id="error-page-title">Deze pagina bestaat niet.</h1>
+  <p>De link is misschien verouderd, of het adres is verkeerd overgenomen.</p>
+  <a class="error-page__link" href="{{ '/' | relative_url }}">Terug naar de homepage</a>
+</section>
