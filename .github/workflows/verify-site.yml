@@ -1,0 +1,30 @@
+name: Verify site
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v6
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Check configuration
+        run: bundle exec jekyll doctor
+
+      - name: Build production site
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --strict_front_matter --trace
