@@ -31,9 +31,31 @@ jobs:
           grep --fixed-strings --quiet 'Voor NXT schreef ik de tekst van' "$RUNNER_TEMP/homepage.html"
           grep --fixed-strings --quiet 'https://open.spotify.com/track/3zTm7TxioU0xLEahUA0eCQ' "$RUNNER_TEMP/homepage.html"
           grep --fixed-strings --quiet 'Zangers gezocht' "$RUNNER_TEMP/homepage.html"
-          grep --fixed-strings --quiet 'mailto:demo@marco-dejong.nl' "$RUNNER_TEMP/homepage.html"
           grep --fixed-strings --quiet 'Zoek je een nummer voor je volgende release' "$RUNNER_TEMP/homepage.html"
-          grep --fixed-strings --quiet 'mailto:studio@marco-dejong.nl' "$RUNNER_TEMP/homepage.html"
+
+          # Cloudflare may replace mailto links with its email-protection URLs.
+          # Decode those URLs so the live destination addresses are still checked.
+          python3 - "$RUNNER_TEMP/homepage.html" <<'PY'
+          import re
+          import sys
+
+          homepage = open(sys.argv[1], encoding="utf-8").read()
+          addresses = set(re.findall(r"mailto:([^\"'?]+)", homepage))
+
+          protected_values = re.findall(
+              r"(?:email-protection#|data-cfemail=\")([0-9a-fA-F]+)",
+              homepage,
+          )
+          for value in protected_values:
+              encoded = bytes.fromhex(value)
+              if encoded:
+                  addresses.add("".join(chr(byte ^ encoded[0]) for byte in encoded[1:]))
+
+          expected = {"demo@marco-dejong.nl", "studio@marco-dejong.nl"}
+          missing = expected - addresses
+          if missing:
+              raise SystemExit(f"Missing email links: {', '.join(sorted(missing))}")
+          PY
 
       - name: Verify public assets
         shell: bash
