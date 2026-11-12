@@ -1,0 +1,56 @@
+name: Validate deployment
+
+on:
+  deployment_status:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  smoke-test:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+      github.event.deployment.environment == 'github-pages')
+    runs-on: ubuntu-latest
+    env:
+      SITE_URL: https://marco-dejong.nl
+    steps:
+      - name: Verify homepage content
+        shell: bash
+        run: |
+          curl --fail --silent --show-error --location \
+            --retry 6 --retry-delay 10 --retry-all-errors \
+            --connect-timeout 10 --max-time 30 \
+            "$SITE_URL/" --output "$RUNNER_TEMP/homepage.html"
+
+          grep --fixed-strings --quiet '<title>Marco de Jong</title>' "$RUNNER_TEMP/homepage.html"
+          grep --fixed-strings --quiet '<link rel="canonical" href="https://marco-dejong.nl/">' "$RUNNER_TEMP/homepage.html"
+          grep --fixed-strings --quiet 'Ik schrijf teksten en melodieën voor Nederlandstalige pop' "$RUNNER_TEMP/homepage.html"
+
+      - name: Verify public assets
+        shell: bash
+        run: |
+          for asset_path in favicon.svg sitemap.xml robots.txt css/app.css; do
+            curl --fail --silent --show-error --location \
+              --retry 3 --retry-delay 5 --retry-all-errors \
+              --connect-timeout 10 --max-time 30 \
+              "$SITE_URL/$asset_path" --output /dev/null
+          done
+
+      - name: Verify redirects and missing pages
+        shell: bash
+        run: |
+          final_url="$(curl --fail --silent --show-error --location \
+            --retry 3 --retry-delay 5 --retry-all-errors \
+            --connect-timeout 10 --max-time 30 \
+            --output /dev/null --write-out '%{url_effective}' \
+            'http://marco-dejong.nl/')"
+          test "$final_url" = "$SITE_URL/"
+
+          http_status="$(curl --silent --show-error \
+            --connect-timeout 10 --max-time 30 \
+            --output /dev/null --write-out '%{http_code}' \
+            "$SITE_URL/this-page-should-not-exist-smoke-test")"
+          test "$http_status" = '404'

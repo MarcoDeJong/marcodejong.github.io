@@ -33,3 +33,6 @@ jobs:
         env:
           JEKYLL_ENV: production
         run: bundle exec jekyll build --strict_front_matter --trace
+
+      - name: Validate generated site
+        run: bundle exec htmlproofer ./_site --disable-external

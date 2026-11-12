@@ -33,10 +33,13 @@ Open <http://localhost:4000>.
 ```sh
 bundle exec jekyll doctor
 JEKYLL_ENV=production bundle exec jekyll build --strict_front_matter
+bundle exec htmlproofer ./_site --disable-external
 ```
 
-The same production build runs automatically for pushes to `master` and for
-pull requests.
+The same checks run automatically for pushes to `master` and for pull
+requests. After GitHub Pages reports a successful deployment, a second workflow
+checks the live homepage, public assets, HTTPS redirect, and 404 response. The
+deployment check can also be started manually from the Actions tab.
 
 ## Updating the GitHub Pages runtime
 
