@@ -1,0 +1,42 @@
+.collaboration {
+  margin: $margin-l auto;
+  max-width: 800px;
+  text-align: left;
+  width: 100%;
+}
+
+.collaboration h2 {
+  color: $acid-lime;
+  font-size: $txt-xl;
+  line-height: 1.1;
+  margin: 0 0 $margin-xs;
+
+  @media all and (min-width: 768px) {
+    font-size: $txt-xxxl;
+  }
+}
+
+.collaboration p {
+  color: $paper;
+  font-size: $txt-m;
+  line-height: 1.6;
+  margin: 0;
+
+  @media all and (min-width: 768px) {
+    font-size: $txt-l;
+  }
+}
+
+.collaboration a {
+  color: $acid-lime;
+  font-weight: 700;
+
+  &:hover {
+    color: $paper;
+  }
+
+  &:focus-visible {
+    outline: 3px solid $acid-lime;
+    outline-offset: 4px;
+  }
+}

@@ -34,3 +34,8 @@ layout: landing
 <a class="singers__link" href="mailto:demo@marco-dejong.nl">Mail je demo naar demo@marco-dejong.nl</a>
 </div>
 </section>
+
+<section class="collaboration" aria-labelledby="collaboration-title">
+<h2 id="collaboration-title">Samenwerken</h2>
+<p>Zoek je een nummer voor je volgende release of wil je samen schrijven? <a href="mailto:{{ site.email }}">Mail me.</a></p>
+</section>
