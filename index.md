@@ -6,7 +6,7 @@ layout: landing
 <div class="wrap hero">
 <div class="hero__copy">
 <h1 class="landing__title"><span>Marco</span><strong>de Jong</strong><small>Songwriter</small></h1>
-<p class="landing__subtitle">Ik schrijf teksten en melodieën voor Nederlandstalige pop, van kinder- en tienerpop tot levenslied.</p>
+<p class="landing__subtitle">Ik schrijf tekst en muziek voor Nederlandstalige pop.</p>
 </div>
 <div class="hero__art">
 <img class="landing__image" src="{{ '/img/marco-dejong.jpg' | relative_url }}" width="328" height="328" alt="Portret van Marco de Jong">
