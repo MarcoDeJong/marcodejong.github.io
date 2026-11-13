@@ -4,6 +4,8 @@ email: studio@marco-dejong.nl
 description: Marco de Jong · Songwriter. Tekst en muziek voor Nederlandstalige pop.
 url: "https://marco-dejong.nl"
 repository: MarcoDeJong/marcodejong.github.io
+og_image: /img/marco-de-jong-songwriter-og.jpg
+og_image_alt: Marco de Jong · Songwriter
 
 # Build settings
 markdown: kramdown

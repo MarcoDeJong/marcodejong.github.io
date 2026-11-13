@@ -17,6 +17,9 @@
   <meta property="og:type" content="website">
   {% if site.og_image %}
   <meta property="og:image" content="{{ site.og_image | absolute_url }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="{{ site.og_image_alt | default: site.title }}">
   {% endif %}
 
   <!-- Twitter -->
@@ -25,6 +28,7 @@
   <meta name="twitter:description" content="{{ page.description | default: site.description }}">
   {% if site.og_image %}
   <meta name="twitter:image" content="{{ site.og_image | absolute_url }}">
+  <meta name="twitter:image:alt" content="{{ site.og_image_alt | default: site.title }}">
   {% endif %}
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
