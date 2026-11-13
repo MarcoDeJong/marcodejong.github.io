@@ -9,7 +9,7 @@ layout: landing
 <p class="landing__subtitle">Ik schrijf tekst en muziek voor Nederlandstalige pop.</p>
 </div>
 <div class="hero__art">
-<img class="landing__image" src="{{ '/img/marco-de-jong-songwriter.webp' | relative_url }}" width="1000" height="1000" alt="Portret van Marco de Jong">
+<img class="landing__image" src="{{ '/img/marco-de-jong-songwriter.webp?v=' | append: site.github.build_revision | relative_url }}" width="1000" height="1000" alt="Portret van Marco de Jong" fetchpriority="high">
 </div>
 </div>
 </header>
