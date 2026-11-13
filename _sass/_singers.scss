@@ -40,14 +40,8 @@
   margin-top: 1.75rem;
 }
 
-.singers__contact span {
-  display: block;
-}
-
 .singers__contact .email-link {
-  display: inline-block;
-  font-size: clamp(1.2rem, 2.2vw, 1.5rem);
-  margin-top: 0.15rem;
+  font-size: inherit;
 }
 
 .singers__visual {
@@ -56,6 +50,7 @@
   aspect-ratio: 1;
   background: $electric-blue;
   border-radius: 50%;
+  color: $paper;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -65,6 +60,9 @@
   max-width: 35rem;
   padding: clamp(3rem, 6vw, 5rem);
   position: relative;
+  text-decoration: none;
+  transform: translate(0, 0);
+  transition: background-color 180ms ease, transform 180ms ease;
   width: 112%;
 }
 
@@ -75,6 +73,15 @@
   inset: -0.8rem;
   pointer-events: none;
   position: absolute;
+}
+
+.singers__visual:hover {
+  background: $ink;
+  transform: translate(-0.45rem, -0.45rem);
+}
+
+.singers__visual:focus-visible {
+  outline-color: $ink;
 }
 
 .singers__visual-label {
@@ -90,9 +97,9 @@
   align-items: center;
   display: flex;
   gap: clamp(0.35rem, 0.8vw, 0.65rem);
-  height: 48%;
+  height: 43%;
   justify-content: center;
-  margin-top: 1.25rem;
+  margin-block: 0.75rem 0.9rem;
   width: 100%;
 }
 
@@ -121,6 +128,18 @@
 
 .singers__wave > span:nth-child(5) {
   height: 88%;
+}
+
+.singers__visual-action {
+  font-size: clamp(1rem, 1.8vw, 1.25rem);
+  font-weight: 800;
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .singers__visual {
+    transition: none;
+  }
 }
 
 @media all and (max-width: 48rem) {

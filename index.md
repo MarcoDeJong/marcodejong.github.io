@@ -39,19 +39,16 @@ layout: landing
 </section>
 </div>
 
-<section class="singers" aria-labelledby="singers-title">
+<section class="singers" id="demo" aria-labelledby="singers-title">
 <div class="wrap singers__inner">
 <div class="singers__content">
 <p class="section-kicker">Zangers gezocht</p>
 <h2 class="section-title" id="singers-title">Zing jij mijn volgende demo?</h2>
 <p>Ik zoek zangers en zangeressen die af en toe een Nederlandstalige popdemo willen inzingen. Met zo’n demo laat ik een nummer horen aan een artiest bij wie het zou kunnen passen.</p>
 <p>Zing je graag pop? Stuur me een filmpje of geluidsfragment waarin je zingt. Ken je iemand die dit leuk zou vinden? Stuur de oproep gerust door.</p>
-<div class="singers__contact">
-<span>Stuur je zangfragment naar</span>
-<a class="email-link" href="mailto:demo@marco-dejong.nl?subject=Zangfragment%20voor%20een%20demo">demo@marco-dejong.nl</a>
+<div class="singers__contact">Stuur je zangfragment naar <a class="email-link" href="mailto:demo@marco-dejong.nl?subject=Zangfragment%20voor%20een%20demo">demo@marco-dejong.nl</a></div>
 </div>
-</div>
-<div class="singers__visual" aria-hidden="true">
+<a class="singers__visual" href="mailto:demo@marco-dejong.nl?subject=Zangfragment%20voor%20een%20demo" aria-label="Stuur je zangfragment per e-mail naar demo@marco-dejong.nl">
 <span class="singers__visual-label">Laat je horen</span>
 <span class="singers__wave" aria-hidden="true">
 <span></span>
@@ -64,7 +61,8 @@ layout: landing
 <span></span>
 <span></span>
 </span>
-</div>
+<span class="singers__visual-action">Stuur je zangfragment</span>
+</a>
 </div>
 </section>
 
@@ -73,7 +71,7 @@ layout: landing
 <h2 class="section-title" id="collaboration-title">Samenwerken</h2>
 <div class="collaboration__copy">
 <p>Zoek je een nummer voor je volgende release of wil je samen schrijven?</p>
-<p class="collaboration__contact"><span>Mail naar</span> <a class="email-link" href="mailto:{{ site.email }}?subject=Samenwerken">{{ site.email }}</a></p>
+<p class="collaboration__contact">Mail naar <a class="email-link" href="mailto:{{ site.email }}?subject=Samenwerken">{{ site.email }}</a></p>
 </div>
 </div>
 </section>

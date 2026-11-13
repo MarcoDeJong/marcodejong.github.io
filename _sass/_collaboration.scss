@@ -19,14 +19,8 @@
   margin-top: 1.5rem;
 }
 
-.collaboration__contact span {
-  display: block;
-}
-
 .collaboration__contact .email-link {
-  display: inline-block;
-  font-size: clamp(1.25rem, 2.4vw, 1.75rem);
-  margin-top: 0.2rem;
+  font-size: inherit;
 }
 
 @media all and (max-width: 34rem) {
