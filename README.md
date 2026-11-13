@@ -2,6 +2,9 @@
 
 Personal songwriter site, built with Jekyll and published through GitHub Pages.
 
+The site uses plain CSS in `css/app.css`. Jekyll serves this file unchanged;
+there is no Sass, PostCSS, or JavaScript build step.
+
 ## Requirements
 
 - Ruby 3.3.4
