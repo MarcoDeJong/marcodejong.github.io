@@ -11,7 +11,15 @@ og_image_alt: Marco de Jong · Songwriter
 markdown: kramdown
 permalink: none
 
+# Jekyll 3 replaces its default exclusions when this list is customized, so
+# build-only directories must remain explicit alongside the source images.
 exclude:
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/
   - img/marco-de-jong-songwriter.png
   - img/marco-de-jong-songwriter-og.png
 
