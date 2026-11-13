@@ -32,7 +32,7 @@ layout: landing
 <section class="landing__intro" aria-labelledby="about-title">
 <h2 class="section-title" id="about-title">Over mij</h2>
 <div class="landing__intro-copy">
-<p>Jaren geleden maakte ik jingles en commercials. Daarna werkte ik aan websites en digitale concepten voor TMF en MTV. Bij de TMF Awards werkte ik ook achter de schermen. Ik kwam veel artiesten tegen, maar zelf muziek maken schoof steeds verder naar de achtergrond.</p>
+<p>Jaren geleden maakte ik jingles en commercials voor radio en tv. Daarna werkte ik aan websites en digitale concepten voor TMF en MTV. Bij de TMF Awards werkte ik ook achter de schermen. Ik kwam veel artiesten tegen, maar zelf muziek maken schoof steeds verder naar de achtergrond.</p>
 <p>Tot het weer begon te kriebelen.</p>
 <p>Nu schrijf, componeer en produceer ik weer.</p>
 </div>
