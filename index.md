@@ -32,9 +32,9 @@ layout: landing
 <section class="landing__intro" aria-labelledby="about-title">
 <h2 class="section-title" id="about-title">Over mij</h2>
 <div class="landing__intro-copy">
-<p>Jaren geleden maakte ik jingles en commercials. Daarna werkte ik jarenlang voor TMF en MTV, aan digitale concepten en websites en achter de schermen bij verschillende TMF Awards-shows. Ik kwam veel met artiesten in aanraking, maar zelf muziek maken raakte steeds meer op de achtergrond.</p>
+<p>Jaren geleden maakte ik jingles en commercials. Daarna werkte ik aan websites en digitale concepten voor TMF en MTV. Bij de TMF Awards werkte ik ook achter de schermen. Ik kwam veel artiesten tegen, maar zelf muziek maken schoof steeds verder naar de achtergrond.</p>
 <p>Tot het weer begon te kriebelen.</p>
-<p>Sinds een tijdje schrijf, componeer en produceer ik weer. Ik werk aan Nederlandstalige nummers, van kinder- en tienerpop tot levenslied.</p>
+<p>Nu schrijf, componeer en produceer ik weer.</p>
 </div>
 </section>
 </div>
@@ -44,9 +44,8 @@ layout: landing
 <div class="singers__content">
 <p class="section-kicker">Zangers gezocht</p>
 <h2 class="section-title" id="singers-title">Zing jij mijn volgende demo?</h2>
-<p>Ik schrijf Nederlandstalige nummers en zoek mensen die het leuk vinden om af en toe een demo in te zingen. Die gebruik ik om mijn nummers te laten horen aan mogelijke uitvoerende artiesten.</p>
-<p>Zing jij graag pop en lijkt je dat leuk? Stuur me een mail met een filmpje of geluidsfragment waarin je zingt.</p>
-<p>Ken je iemand met een fijne stem? Stuur dit gerust door!</p>
+<p>Ik zoek zangers en zangeressen die af en toe een Nederlandstalige popdemo willen inzingen. Met zo’n demo laat ik een nummer horen aan een artiest bij wie het zou kunnen passen.</p>
+<p>Zing je graag pop? Mail me een filmpje of geluidsfragment waarin je zingt. Ken je iemand die dit leuk zou vinden? Stuur de oproep gerust door.</p>
 </div>
 <a class="singers__visual" href="mailto:demo@marco-dejong.nl" aria-label="Stuur je zangfragment per e-mail">
 <span class="singers__visual-label">Laat je horen</span>
