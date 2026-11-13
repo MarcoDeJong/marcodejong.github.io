@@ -90,11 +90,11 @@ section[id] {
   border: 1px solid rgba($electric-blue, 0.14);
   border-radius: 50%;
   content: "";
+  left: -18rem;
   pointer-events: none;
   position: absolute;
-  right: -20rem;
-  top: clamp(8rem, 14vw, 14rem);
-  width: clamp(38rem, 55vw, 48rem);
+  top: 2.5rem;
+  width: clamp(38rem, 52vw, 44rem);
   z-index: -1;
 }
 
@@ -220,8 +220,8 @@ blockquote {
 
 @media all and (max-width: 48rem) {
   .content::before {
-    right: -22rem;
-    top: 15rem;
+    left: -24rem;
+    top: 4rem;
     width: 34rem;
   }
 }

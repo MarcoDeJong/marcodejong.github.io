@@ -36,6 +36,7 @@
 
 .singers__visual {
   align-items: center;
+  align-self: start;
   aspect-ratio: 1;
   background: $electric-blue;
   border-radius: 50%;
@@ -156,6 +157,7 @@
   }
 
   .singers__visual {
+    align-self: auto;
     justify-self: end;
     margin-block-end: -4.5rem;
     margin-inline-end: -2.5rem;
