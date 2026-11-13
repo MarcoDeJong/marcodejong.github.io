@@ -47,9 +47,10 @@ layout: landing
 <p>Ik schrijf Nederlandstalige nummers en zoek mensen die het leuk vinden om af en toe een demo in te zingen. Die gebruik ik om mijn nummers te laten horen aan mogelijke uitvoerende artiesten.</p>
 <p>Zing jij graag pop en lijkt je dat leuk? Stuur me een mail met een filmpje of geluidsfragment waarin je zingt.</p>
 <p>Ken je iemand met een fijne stem? Stuur dit gerust door!</p>
-<a class="button button--dark singers__link" href="mailto:demo@marco-dejong.nl">Stuur je zangfragment <span class="button__arrow" aria-hidden="true">↗</span></a>
 </div>
-<div class="singers__visual" aria-hidden="true">
+<a class="singers__visual" href="mailto:demo@marco-dejong.nl" aria-label="Stuur je zangfragment per e-mail">
+<span class="singers__visual-label">Laat je horen</span>
+<span class="singers__wave" aria-hidden="true">
 <span></span>
 <span></span>
 <span></span>
@@ -59,7 +60,9 @@ layout: landing
 <span></span>
 <span></span>
 <span></span>
-</div>
+</span>
+<span class="singers__visual-action">Stuur je zangfragment <span class="singers__visual-arrow" aria-hidden="true">↗</span></span>
+</a>
 </div>
 </section>
 
