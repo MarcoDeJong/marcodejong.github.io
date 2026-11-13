@@ -22,7 +22,7 @@ layout: landing
 <div class="release-card__copy">
 <h3>We Are NXT</h3>
 <p>Voor NXT schreef ik de tekst van <strong>‘We Are NXT’</strong>. Het nummer kwam in juni 2026 uit als single en staat ook op <em>Spot Aan</em>, het album van Kinderen voor Kinderen. Inmiddels is het op Spotify meer dan 500.000 keer gestreamd.</p>
-<a class="button button--outline release-card__link" href="https://open.spotify.com/track/3zTm7TxioU0xLEahUA0eCQ">Luister op Spotify <span class="button__arrow" aria-hidden="true">↗</span></a>
+<a class="button button--outline release-card__link" href="https://open.spotify.com/track/3zTm7TxioU0xLEahUA0eCQ">Luister op Spotify <span class="button__arrow icon-arrow" aria-hidden="true"></span></a>
 </div>
 <iframe class="release-card__embed" src="https://open.spotify.com/embed/track/3zTm7TxioU0xLEahUA0eCQ?theme=0" title="We Are NXT op Spotify" loading="eager" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </article>
@@ -61,7 +61,7 @@ layout: landing
 <span></span>
 <span></span>
 </span>
-<span class="singers__visual-action">Stuur je zangfragment <span class="singers__visual-arrow" aria-hidden="true">↗</span></span>
+<span class="singers__visual-action">Stuur je zangfragment <span class="singers__visual-arrow icon-arrow" aria-hidden="true"></span></span>
 </a>
 </div>
 </section>
@@ -71,7 +71,7 @@ layout: landing
 <h2 class="section-title" id="collaboration-title">Samenwerken</h2>
 <div class="collaboration__copy">
 <p>Zoek je een nummer voor je volgende release of wil je samen schrijven?</p>
-<a class="button collaboration__link" href="mailto:{{ site.email }}">Mail me <span class="button__arrow" aria-hidden="true">↗</span></a>
+<a class="button collaboration__link" href="mailto:{{ site.email }}">Mail me <span class="button__arrow icon-arrow" aria-hidden="true"></span></a>
 </div>
 </div>
 </section>

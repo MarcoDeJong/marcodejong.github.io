@@ -130,11 +130,36 @@ section[id] {
   border-radius: 50%;
   display: inline-flex;
   flex: none;
-  font-size: 1.05em;
   height: 1.85rem;
   justify-content: center;
-  line-height: 1;
   width: 1.85rem;
+}
+
+.icon-arrow {
+  position: relative;
+}
+
+.icon-arrow::before {
+  background: currentColor;
+  content: "";
+  height: 1.5px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.8rem;
+}
+
+.icon-arrow::after {
+  border-right: 1.5px solid currentColor;
+  border-top: 1.5px solid currentColor;
+  content: "";
+  height: 0.38rem;
+  position: absolute;
+  right: calc(50% - 0.4rem);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  width: 0.38rem;
 }
 
 .button--outline {
