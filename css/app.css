@@ -197,7 +197,7 @@ section[id] {
 
 .email-link {
   color: inherit;
-  font-weight: 800;
+  font-weight: inherit;
   overflow-wrap: anywhere;
   text-decoration-line: underline;
   text-decoration-thickness: 0.08em;
