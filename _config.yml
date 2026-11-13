@@ -11,5 +11,9 @@ og_image_alt: Marco de Jong · Songwriter
 markdown: kramdown
 permalink: none
 
+exclude:
+  - img/marco-de-jong-songwriter.png
+  - img/marco-de-jong-songwriter-og.png
+
 plugins:
   - jekyll-sitemap
