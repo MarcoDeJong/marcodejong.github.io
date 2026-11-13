@@ -177,6 +177,19 @@ section[id] {
   width: 0.38rem;
 }
 
+.email-link {
+  color: inherit;
+  font-weight: 800;
+  overflow-wrap: anywhere;
+  text-decoration-line: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+.email-link:hover {
+  text-decoration-thickness: 0.15em;
+}
+
 .button--outline {
   background: transparent;
   border-color: $ink;

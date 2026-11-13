@@ -45,9 +45,13 @@ layout: landing
 <p class="section-kicker">Zangers gezocht</p>
 <h2 class="section-title" id="singers-title">Zing jij mijn volgende demo?</h2>
 <p>Ik zoek zangers en zangeressen die af en toe een Nederlandstalige popdemo willen inzingen. Met zo’n demo laat ik een nummer horen aan een artiest bij wie het zou kunnen passen.</p>
-<p>Zing je graag pop? Mail me een filmpje of geluidsfragment waarin je zingt. Ken je iemand die dit leuk zou vinden? Stuur de oproep gerust door.</p>
+<p>Zing je graag pop? Stuur me een filmpje of geluidsfragment waarin je zingt. Ken je iemand die dit leuk zou vinden? Stuur de oproep gerust door.</p>
+<div class="singers__contact">
+<span>Stuur je zangfragment naar</span>
+<a class="email-link" href="mailto:demo@marco-dejong.nl?subject=Zangfragment%20voor%20een%20demo">demo@marco-dejong.nl</a>
 </div>
-<a class="singers__visual" href="mailto:demo@marco-dejong.nl" aria-label="Stuur je zangfragment per e-mail">
+</div>
+<div class="singers__visual" aria-hidden="true">
 <span class="singers__visual-label">Laat je horen</span>
 <span class="singers__wave" aria-hidden="true">
 <span></span>
@@ -60,8 +64,7 @@ layout: landing
 <span></span>
 <span></span>
 </span>
-<span class="singers__visual-action">Stuur je zangfragment <span class="singers__visual-arrow icon-arrow" aria-hidden="true"></span></span>
-</a>
+</div>
 </div>
 </section>
 
@@ -70,7 +73,7 @@ layout: landing
 <h2 class="section-title" id="collaboration-title">Samenwerken</h2>
 <div class="collaboration__copy">
 <p>Zoek je een nummer voor je volgende release of wil je samen schrijven?</p>
-<a class="button collaboration__link" href="mailto:{{ site.email }}">Mail me <span class="button__arrow icon-arrow" aria-hidden="true"></span></a>
+<p class="collaboration__contact"><span>Mail naar</span> <a class="email-link" href="mailto:{{ site.email }}?subject=Samenwerken">{{ site.email }}</a></p>
 </div>
 </div>
 </section>
