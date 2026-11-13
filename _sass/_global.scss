@@ -80,7 +80,22 @@ section[id] {
 }
 
 .content {
+  isolation: isolate;
   padding-block: var(--section-space);
+  position: relative;
+}
+
+.content::before {
+  aspect-ratio: 1;
+  border: 1px solid rgba($electric-blue, 0.14);
+  border-radius: 50%;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  right: -20rem;
+  top: clamp(8rem, 14vw, 14rem);
+  width: clamp(38rem, 55vw, 48rem);
+  z-index: -1;
 }
 
 .section-title {
@@ -201,4 +216,12 @@ blockquote {
 .ui__emphasize {
   color: $acid-lime;
   font-weight: bold;
+}
+
+@media all and (max-width: 48rem) {
+  .content::before {
+    right: -22rem;
+    top: 15rem;
+    width: 34rem;
+  }
 }
